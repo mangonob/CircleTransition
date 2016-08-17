@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5GM-Vk-AKp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5GM-Vk-AKp">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" fixedFrame="YES" image="page1" translatesAutoresizingMaskIntoConstraints="NO" id="4EZ-Cs-sDp">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="page1" translatesAutoresizingMaskIntoConstraints="NO" id="4EZ-Cs-sDp">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPp-uq-JML">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPp-uq-JML">
                                 <rect key="frame" x="314" y="14" width="47" height="47"/>
                                 <connections>
                                     <segue destination="wrF-cC-4pJ" kind="show" id="LGl-Wp-hT0"/>
@@ -28,6 +28,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GPp-uq-JML" secondAttribute="trailing" constant="14" id="SFN-ro-BP0"/>
+                            <constraint firstAttribute="trailing" secondItem="4EZ-Cs-sDp" secondAttribute="trailing" id="ViH-Bn-IKD"/>
+                            <constraint firstItem="4EZ-Cs-sDp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gcn-aa-c5a"/>
+                            <constraint firstItem="4EZ-Cs-sDp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="h7J-MD-tbL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4EZ-Cs-sDp" secondAttribute="bottom" id="j6V-7D-2gT"/>
+                            <constraint firstItem="GPp-uq-JML" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="14" id="xqh-lp-tfl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tzJ-L6-sRu"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -51,7 +59,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" fixedFrame="YES" image="page2" translatesAutoresizingMaskIntoConstraints="NO" id="DLQ-5C-NlW">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="page2" translatesAutoresizingMaskIntoConstraints="NO" id="DLQ-5C-NlW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WP-0E-8Wt">
@@ -62,12 +70,18 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DLQ-5C-NlW" firstAttribute="top" secondItem="bx9-4p-Su1" secondAttribute="top" id="KqM-rY-x2N"/>
+                            <constraint firstItem="fnU-gY-oqu" firstAttribute="top" secondItem="DLQ-5C-NlW" secondAttribute="bottom" id="X0Q-Ch-JiK"/>
+                            <constraint firstItem="DLQ-5C-NlW" firstAttribute="leading" secondItem="bx9-4p-Su1" secondAttribute="leading" id="vD6-N7-i8D"/>
+                            <constraint firstAttribute="trailing" secondItem="DLQ-5C-NlW" secondAttribute="trailing" id="wro-ko-7r9"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2CH-6R-tNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729.5" y="433.5"/>
+            <point key="canvasLocation" x="729.5" y="420.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q8r-E6-ciQ">
